@@ -43,17 +43,14 @@ const MovieList = ({ searchResults }) => {
 
   return (
     <div>
-      {/* {selectedCategoryName !== "All" && <h1>{selectedCategoryName} Movies</h1>} */}
+     
 
       <Getcategory
         selectedCategory={selectedCategory}
         handleCategoryChange={handleCategoryChange}
       />{selectedCategoryName !== "All" && <h1>{selectedCategoryName} Movies</h1>}
 
-      {/* <CategoryFilter
-        selectedCategory={selectedCategory}
-        handleCategoryChange={handleCategoryChange}
-      /> */}
+     
 
       <div className="movies">
         {moviesToDisplay.map((item) => (
